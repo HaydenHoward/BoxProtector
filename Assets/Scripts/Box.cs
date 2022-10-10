@@ -35,13 +35,14 @@ public class Box : Mover
         if (Vector3.Distance(transform.position, target.position) < startLength)
         {
             chasing = true;
+            gameObject.tag = "Box";
         }
         if (chasing)
         {
             if (Vector3.Distance(transform.position, target.position) > stopLength)
             {
                 transform.position = Vector3.MoveTowards(transform.position, target.position, xSpeed * Time.deltaTime);
-            }
+            }        
         }
     }
 }

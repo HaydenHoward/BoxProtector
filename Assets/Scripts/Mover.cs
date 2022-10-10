@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
- private Vector3 originalSize;
+    private Vector3 originalSize;
 
     protected BoxCollider2D boxCollider;
     protected Vector3 moveDelta;
