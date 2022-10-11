@@ -19,6 +19,10 @@ public class gameManager : MonoBehaviour
 
     // Refrences
     public Player player;
+    public PlayerTriggers gameTime;
+    public BigBox savedBoxes;
+
+
 
     // Logic
 

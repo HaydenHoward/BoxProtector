@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Box
   - Big Box
+  - Lost Box
   layers:
   - Default
   - TransparentFX

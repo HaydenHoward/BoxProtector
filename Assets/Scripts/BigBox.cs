@@ -20,5 +20,5 @@ public class BigBox : Collidable
             Destroy(GameObject.FindGameObjectWithTag("Box"));
             savedBoxes += 1;
         }
-    }
+    }    
 }
