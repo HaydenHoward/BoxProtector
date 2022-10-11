@@ -2,17 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Portal : Collidable
+public class Portal : MonoBehaviour
 {
 
     public WinLoose winLooseScript;
+    private bool collectedBoxes;
 
-    private void OnTriggerEnter2D(Collider2D coll)
+    // void Start()
+    // {
+    //     GameObject[] boxes;
+    //     boxes = GameObject.FindGameObjectsWithTag("Box");
+    //     if(boxes.Length == 0)
+    //     {
+    //         collectedBoxes = true;   
+    //     }
+    // }
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (coll.name != "Player")
-            return;
-        if ()
-        winLooseScript.WinLevel();
+        GameObject[] boxes;
+        boxes = GameObject.FindGameObjectsWithTag("Box");
+        GameObject[] boxesLost;
+        boxesLost = GameObject.FindGameObjectsWithTag("Lost Box");
+        if(boxes.Length == 0 & boxesLost.Length == 0)
+        {
+            collectedBoxes = true;   
+        }
+        if (collectedBoxes)
+        {
+            winLooseScript.WinLevel();
+        }
     }
     
 }

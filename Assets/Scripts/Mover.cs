@@ -5,12 +5,15 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     private Vector3 originalSize;
-
+    public Animator animator;
     protected BoxCollider2D boxCollider;
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
     public float ySpeed = 0.75f;
     public float xSpeed = 1.0f;
+    private float playerSpeed = 0.0f;
+
+
 
     protected virtual void Start()
     {
@@ -22,8 +25,13 @@ public class Mover : MonoBehaviour
     protected virtual void UpdateMotor(Vector3 input)
     {
         // Reset MoveDelta
-        moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
+        playerSpeed = (input.x * xSpeed) + (input.y * ySpeed) / 2;
+        
+        animator.SetFloat("Speed", Mathf.Abs(playerSpeed));
+        // animator.SetFloat("Speed", Mathf.Abs(verticleSpeed));
 
+
+        moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
         // Swap sprite direction, wether you're going right or left
         if(moveDelta.x > 0)
             transform.localScale = originalSize;

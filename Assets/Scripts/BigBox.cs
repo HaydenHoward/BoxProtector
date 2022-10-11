@@ -11,7 +11,6 @@ public class BigBox : Collidable
 
     protected override void OnCollide(Collider2D coll)
     {
-        
         if (coll.name != "Player")
             return;
         if (Time.time - lastDeposite > depositCoolDown)
