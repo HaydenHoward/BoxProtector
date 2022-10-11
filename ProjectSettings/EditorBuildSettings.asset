@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/titleScreen.unity
     guid: e48007014ccdff74b8616a1d843d23e9
   - enabled: 1
-    path: Assets/Scenes/levelOne.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/levelTwo.unity
     guid: 26c0ada8bf2ee554c91e0e366c32ebf3
+  - enabled: 1
+    path: Assets/Scenes/levelOne.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
