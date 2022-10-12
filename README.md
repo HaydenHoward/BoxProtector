@@ -4,9 +4,8 @@ The character moves around the map and gets with in range of boxes that begin to
 
 This game helped me have more of a understanding of C# and how to work with Unity. I also got to expeirence more of the process of game developlment to help me decide if that is something I want to pursue more. 
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/tmSZScCbGtM)
+[Game Link](https://play.unity.com/mg/other/boxprotectorbuild)
 
 # Development Environment
 
@@ -35,4 +34,3 @@ I wrote this game in C# and used built in libraries with the unity software.
 * Add sound effects and music
 * Add in enemies to slow down the player
 * Save the progress of the player
-* Make the game playable by others
