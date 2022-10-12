@@ -9,10 +9,7 @@ This game helped me have more of a understanding of C# and how to work with Unit
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
 To get this game working I used Unity as my game framework and the IDE I used was Visual Studio Code. 
-
-{Describe the programming language that you used and any libraries.}
 
 I wrote this game in C# and used built in libraries with the unity software. 
 
